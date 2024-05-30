@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyBoards Store</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <header class="hero-section">
+    <div class="navbar">
+        <h2><img width="200px" src="imgs/Logo Maker 2024_05_24_02_29_10.png" alt="LOGO">KEYBOARDs</h2>
+        <div class="cart">
+            <i class="bi bi-basket"></i>
+            <div class="cartAmount">Empty</div>
+        </div>
+     </div>
+    <div class="hero-content">
+        <h1>Find Your Perfect Keyboard</h1>
+        <p>Discover a wide range of high-quality keyboards to suit all your needs.</p>
+        <a href="#shop" class="cta-button">Shop Now</a>
+    </div>
+</header>
+
+
+ <form>
+ <div class="shop" id="shop" aria-required="true">
+    <div class="items">
+        <img class="pics" width="123px" src="imgs/Mechanical-Keyboard-No-Background.png">
+        <div class="details">
+            <h4>Mechanical-Keyboard</h4>
+            <p>Water proof with a unti-Dust.</p>
+            <div class="price-quat">
+                <h3>R3 011.87<sub>inc.VAT</sub></h3>
+                <div class="button">
+                    <i onclick="decrease()" class="bi bi-dash-square-fill"></i>
+                    <div id="quantity" class="quantity">0</div>
+                    <i onclick="increase()" class="bi bi-plus-square-fill"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="shop" class="items">
+        <img class="pics" width="123px" src="imgs/black-.png">
+        <div class="details">
+            <h4>Back keyboard C#2</h4>
+            <p>Water proof with a unti-Dust.</p>
+            <div class="price-quat">
+                <h3>R1 811.99<sub>inc.VAT</sub></h3>
+                <div class="button">
+                    <i onclick="decrease2()" class="bi bi-dash-square-fill"></i>
+                    <div id="quantity2" class="quantity">0</div>
+                    <i onclick="increase2()" class="bi bi-plus-square-fill"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="items">
+        <img class="pics" width="123px" src="imgs/dfc009745139531bce390cc6126ef9b5.png">
+        <div class="details">
+            <h4>Colorful keyboard</h4>
+            <p>Water proof with a unti-Dust.</p>
+            <div class="price-quat">
+                <h3>R3 841.87<sub>inc.VAT</sub></h3>
+                <div class="button">
+                    <i onclick="decrease3()" class="bi bi-dash-square-fill"></i>
+                    <div id="quantity3" class="quantity">0</div>
+                    <i onclick="increase3()" class="bi bi-plus-square-fill"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="items">
+        <img class="pics" width="123px" src="imgs/Gaming-Keyboard-PNG-High-Quality-Image.png">
+        <div class="details">
+            <h4>Gaming-Keyboard</h4>
+            <p>Water proof with a unti-Dust.</p>
+            <div class="price-quat">
+                <h3>R2 951.57<sub>inc.VAT</sub></h3>
+                <div class="button">
+                    <i onclick="decrease4()" class="bi bi-dash-square-fill"></i>
+                    <div id="quantity4" class="quantity">0</div>
+                    <i onclick="increase4()" class="bi bi-plus-square-fill"></i>
+                </div>
+            </div>        
+        </div>
+    </div>
+    
+    <div id="01" class="items">
+        <img class="pics" width="123px" src="imgs/Keyboard-Download-PNG.png">
+        <div class="details">
+            <h4> Classic -Keyboard</h4>
+            <p>Water proof with a unti-Dust.</p>
+            <p>Office Use and other.</p>
+            <div class="price-quat">
+                <h3>R1 999.99<sub>inc.VAT</sub></h3>
+                <div class="button">
+                    <i onclick="decrease5()" class="bi bi-dash-square-fill"></i>
+                    <div id="quantity5" class="quantity">0</div>
+                    <i onclick="increase5()" class="bi bi-plus-square-fill"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="items">
+        <img class="pics" width="123px" src="imgs/K596-M686.webp">
+        <div class="details">
+            <h4>K596-M686 keyboard</h4>
+            <p>Water proof with a unti-Dust.</p>
+            <p>LED lights 23WATTS</p>
+            <div class="price-quat">
+                <h3>R7 201.00<sub>inc.VAT</sub></h3>
+                <div class="item">
+                    <div class="button">
+                        <i onclick="decrease6()" class="bi bi-dash-square-fill"></i>
+                        <div id="quantity6" class="quantity">0</div>
+                        <i onclick="increase6()" class="bi bi-plus-square-fill"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="container content-section" id="shopping-cart">
+        <h3 style="text-decoration: underline;text-align: center; margin-bottom: 7%;">Shopping Cart purchase.</h3>
+        <div class="cart-total"> 
+            <strong class="cart-total-title">Total</strong>
+            <span  class="cart-total-price" style="text-align: right;">R0</span>
+        </div>
+        <br>
+        <button id="purchase-btn" type="button" class="fa-solid">PURCHASE</button>
+    </section>
+</form>
+
+<div id="purchased-items" class="container content-section">
+    <h3>Purchased Items</h3>
+    <ul id="purchased-list"></ul>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Contact Us</h3>
+                <p>2354 Drzk 4</p>
+                <p>Johannesburg, SA</p>
+                <p>Email: futurekgomotso@gmail.com</p>
+                <p>Phone: +27634414863</p>
+            </div>
+            <div class="col-md-6">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                    <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
